@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    max-width: 450px;
+    background-image: url(https://global.discourse-cdn.com/elastic/original/3X/9/0/90df22ab443662d632838fd82f6ea38b2cba025a.png);
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px 3px rgb(0,0,33);
+    font-family: sans-serif;
+    padding: 20px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    bottom: 150px;
+    transform: translateX(-50%);
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+}
+.Temparature-icon{
+    font-size: 45px;
+    color: #070707;
+}
+h1{
+    color: #000000;
+    letter-spacing: 1.4px;
+}
+.title h1 {
+    margin-bottom: 20px;
+}
+
+#celsius, #fahrenheit, #kelvin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+input{
+    flex: 3;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 10px;
+    border-radius: 8px 0 0 8px;
+    padding: 0 10px;
+    background-color: #000000;  
+    margin-bottom: 5px; 
+    color: white;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.icon{
+    flex: 1;
+    height: auto;
+    padding: 0px 20px;
+    text-align: center;
+    font-size: 40px;
+    color: #000000;
+    border-radius: 0px 10px 10px 0px;
+    width: auto;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.button{
+    margin-top: 25px;
+    text-align: center;
+}
+.button button{
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color:blue;
+    color: white;
+}
+.button button:hover{
+    color:white;
+    background-color: greenyellow;
+}
+html {
+	height: 100%;
+	width: 1000px;
+	background-color: hsla(200,40%,30%,.4);
+	background-image:		
+		url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
+		url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
+		url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+		url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
+		url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
+	background-repeat: repeat-x;
+	background-position: 
+		0 20%,
+		0 100%,
+		0 50%,
+		0 100%,
+		0 0;
+	background-size: 
+		2500px,
+		800px,
+		500px 200px,
+		1000px,
+		400px 260px;
+	animation: 50s para infinite linear;
+	}
+
+@keyframes para {
+	100% {
+		background-position: 
+			-5000px 20%,
+			-800px 95%,
+			500px 50%,
+			1000px 100%,
+			400px 0;
+		}
+	}
